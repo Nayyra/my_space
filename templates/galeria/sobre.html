@@ -1,0 +1,95 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .cards{
+        width: 30%;
+    }
+ 
+    .cards img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .cards:hover{
+    padding: 105px;
+    width: 33%;
+    }
+
+    section{
+    height: 700px;
+    }
+
+</style>
+
+    <nav class="menubar">
+         <div class="logo"> 
+            <h1>Braidsnayy</h1>
+         </div>
+         <div class="menu">
+            <a href="{% url 'index' %}">home</a>
+            <a href="#">about us</a>
+            <a href="#servicos">serviços</a>
+            <a id="botao" href="#contatos">fale conosco</a>
+         </div>
+    </nav>
+    <header class="header" id="home">
+        <div class="headline">
+            <h2 id="titulo" style="font-size: 70px;">Sobre Nós</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia laboriosam minus cumque aperiam quis necessitatibus fugit voluptates, possimus, dicta pariatur libero. Culpa perferendis voluptatem maiores commodi dolorem quia officiis.
+            </p>
+            <a class="agende-btn" href="#">Agende Agora</a>
+        </div>
+        <div class="imghead">
+            <img width="90%" height="90%" src="{% static 'imgs/nay.jpg' %}" alt="black" >
+        </div>
+    </header>
+    <section>
+        <h2  id="servicos">O que podemos fazer pelo seu negócio?</h2>
+        <div class="servicos">
+            <div class="cards" >
+                <img src="{% static 'imgs/tranca4.jpg' %}" alt="">
+                <div class="card-text">
+                <h3>Trança nagô lateral </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia laboriosam minus cumque aperiam quis necessitatibus fugit voluptates, possimus, dicta pariatur libero. Culpa perferendis voluptatem maiores commodi dolorem quia officiis.
+                </p>
+            </div>
+            <div class="img-oculta">
+                <h3>Texto alternaativo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis animi error ea, tenetur amet eaque, vitae, deserunt perferendis id accusamus omnis labore totam hic dolore incidunt porro nostrum praesentium magni.</p>
+            </div>
+            </div>
+            <div class="cards">
+                <img src="{% static 'imgs/tranca1.jpg' %}" alt="">
+                <div class="card-text">
+                <h3>Trança nagô topo </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia laboriosam minus cumque aperiam quis necessitatibus fugit voluptates, possimus, dicta pariatur libero. Culpa perferendis voluptatem maiores commodi dolorem quia officiis.
+                </p>
+            </div>
+            <div class="img-oculta">
+                <h3>Texto alternaativo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis animi error ea, tenetur amet eaque, vitae, deserunt perferendis id accusamus omnis labore totam hic dolore incidunt porro nostrum praesentium magni.</p>
+            </div>
+            </div>
+            <div class="cards">
+                <img src="{% static 'imgs/tranca3.jpg' %}" alt="">
+                <div class="card-text">
+                <h3>Trança boxeadora</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia laboriosam minus cumque aperiam quis necessitatibus fugit voluptates, possimus, dicta pariatur libero. Culpa perferendis voluptatem maiores commodi dolorem quia officiis.
+                </p>
+            </div>
+            <div class="img-oculta">
+                <h3>Texto alternaativo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis animi error ea, tenetur amet eaque, vitae, deserunt perferendis id accusamus omnis labore totam hic dolore incidunt porro nostrum praesentium magni.</p>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}
